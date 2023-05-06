@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from 'redux/operations';
 import { selectError, selectIsLoading, selectUsers } from 'redux/selectors';
+import { Button, Item, List } from './UserList.styled';
 
 export const UserLIst = () => {
   const [page, setPage] = useState(1);
@@ -29,16 +30,16 @@ export const UserLIst = () => {
 
   return (
     <>
-      <ul>
+      <List>
         {users.map(user => {
           return (
-            <li key={user.id}>
+            <Item key={user.id}>
               <UserListItem userItem={user}/>
-            </li>
+            </Item>
           );
         })}
-      </ul>
-      {page < 4 && <button onClick={handleLoadMoreClick}>Load more</button>}
+      </List>
+      {page < 4 && <Button onClick={handleLoadMoreClick}>Load more</Button>}
     </>
   );
 };
