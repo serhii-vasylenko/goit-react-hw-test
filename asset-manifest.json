@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-test/static/css/main.eab82d60.css",
+    "main.js": "/goit-react-hw-test/static/js/main.7225d301.js",
+    "static/media/card-bg.png": "/goit-react-hw-test/static/media/card-bg.66ef788f31ecdfe25f4e.png",
+    "index.html": "/goit-react-hw-test/index.html",
+    "main.eab82d60.css.map": "/goit-react-hw-test/static/css/main.eab82d60.css.map",
+    "main.7225d301.js.map": "/goit-react-hw-test/static/js/main.7225d301.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eab82d60.css",
+    "static/js/main.7225d301.js"
+  ]
+}
