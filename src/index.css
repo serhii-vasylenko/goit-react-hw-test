@@ -43,6 +43,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 button.following {
   background-color: #5CD3A8;;
 }

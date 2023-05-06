@@ -1,14 +1,22 @@
 // import logo from './logo.svg';
 import './App.css';
-import { UserLIst } from './UserList/UserList';
+import { Route, Routes } from 'react-router';
+import Layout from './Layout/Layout';
+import { lazy } from 'react';
+
+const Home = lazy(() => import('pages/HomePage'));
+const Tweets = lazy(() => import('pages/TweetsPage'));
 
 const App = () => {
   
   return (
-    <>
-    <h1>Hello</h1>
-    <UserLIst/>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="tweets" element={<Tweets />} />
+        <Route path="*" element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 
