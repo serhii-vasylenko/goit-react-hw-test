@@ -1,16 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-return(
+  return (
     <>
-        <h2>
+      <h2>
         Press to see all
-        <Link to="/tweets" >
-          TWEETS
-        </Link>
-        </h2>
+        <Link to="/tweets">{' '}TWEETS</Link>
+      </h2>
     </>
-)
-}
+  );
+};
 
 export default HomePage;

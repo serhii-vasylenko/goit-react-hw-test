@@ -1,41 +1,39 @@
 import { UserListItem } from 'components/UserListItem/UserListItem';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from 'redux/operations';
-import { selectUsers } from 'redux/selectors';
+import { selectPage, selectUsers } from 'redux/selectors';
 import { Button, Item, List } from './UserList.styled';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import { HiArrowLeft } from 'react-icons/hi';
+import { clearState, nextPage } from 'redux/usersSlice';
+
+import Dropdown from 'react-dropdown';
+import { onSelect } from 'services/onSelect';
 
 export const UserLIst = () => {
-  const [page, setPage] = useState(1);
-
-  let users = useSelector(selectUsers);
+  const page = useSelector(selectPage);
+  const users = useSelector(selectUsers);
 
   const location = useLocation();
   const backLocation = useRef(location.state?.from ?? '/');
 
+  const options = ['all', 'follow', 'followings'];
+  const defaultOption = options[0];
+
   const dispatch = useDispatch();
+
   useEffect(() => {
-    if (page > 4 || users.length > 11) {
-      return;
-    }
-
-    if (page === 1 && users.length > 0) {
-      return;
-    }
-
     dispatch(fetchUsers(page));
-    // eslint-disable-next-line
   }, [dispatch, page]);
 
-  const handleLoadMoreClick = () => {
-    setPage(state => state + 1);
-  };
+  const handleLoadMoreClick = () => dispatch(nextPage());
 
   useEffect(() => {
-    setPage(users.length / 3 || 1);
+    return () => {
+      dispatch(clearState());
+    };
     // eslint-disable-next-line
   }, []);
 
@@ -45,6 +43,13 @@ export const UserLIst = () => {
         <HiArrowLeft size="24" />
         Back
       </Link>
+      <Dropdown
+        options={options}
+        onChange={onSelect}
+        value={defaultOption}
+        placeholder="Select an option"
+      />
+      ;
       <List>
         {users.map(user => {
           return (

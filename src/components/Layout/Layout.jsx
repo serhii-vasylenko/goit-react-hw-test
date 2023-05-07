@@ -1,5 +1,5 @@
-import { Suspense } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Suspense } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
@@ -16,11 +16,11 @@ const Layout = () => {
           </ul>
         </nav>
       </header>
-      <main>
-        <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <main>
           <Outlet />
-        </Suspense>
-      </main>
+        </main>
+      </Suspense>
     </>
   );
 };

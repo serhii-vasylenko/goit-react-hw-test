@@ -8,11 +8,22 @@ const usersSlice = createSlice({
     items: [],
     isLoading: false,
     error: null,
+    page: 1,
+  },
+  reducers: {
+    nextPage(state) {
+      state.page = state.page + 1;
+    },
+    clearState(state) {
+      state.page = 1;
+      state.items = [];
+    },
   },
   extraReducers: builder => {
     builder.addCase(fetchUsers.pending, handlePending);
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
-      state.items.push(...action.payload);
+      console.log(state.items.length)
+      state.items =  [...state.items, ...action.payload];
       resetState(state);
     });
     builder.addCase(fetchUsers.rejected, handleRejected);
@@ -60,3 +71,4 @@ const resetState = state => {
 };
 
 export default usersSlice.reducer;
+export const { nextPage, clearState } = usersSlice.actions;

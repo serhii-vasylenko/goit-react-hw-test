@@ -18,11 +18,11 @@ export const UserListItem = ({ userItem }) => {
   };
 
   return (
-    <Card>
+    <Card className={isFollow ? 'all followings' : 'all follow'} >
       <Image src={avatar} alt="avatar" />
       <Tweets>{tweets.toLocaleString('en-US')} tweets</Tweets>
       <Followers>{followers.toLocaleString('en-US')} followers</Followers>
-      <Button type="button" onClick={onFollow} className={isFollow ? 'following' : ''}>
+      <Button type="button" onClick={onFollow} className={isFollow ? 'following' : 'follow'}>
         {isFollow ? 'Following' : 'Follow'}
       </Button>
     </Card>
