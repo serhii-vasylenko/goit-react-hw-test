@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-test/static/css/main.eab82d60.css",
-    "main.js": "/goit-react-hw-test/static/js/main.7225d301.js",
+    "main.css": "/goit-react-hw-test/static/css/main.367fbbf3.css",
+    "main.js": "/goit-react-hw-test/static/js/main.fd6148c9.js",
+    "static/js/983.105e5963.chunk.js": "/goit-react-hw-test/static/js/983.105e5963.chunk.js",
+    "static/js/501.99b31d12.chunk.js": "/goit-react-hw-test/static/js/501.99b31d12.chunk.js",
+    "static/js/58.293013f6.chunk.js": "/goit-react-hw-test/static/js/58.293013f6.chunk.js",
     "static/media/card-bg.png": "/goit-react-hw-test/static/media/card-bg.66ef788f31ecdfe25f4e.png",
     "index.html": "/goit-react-hw-test/index.html",
-    "main.eab82d60.css.map": "/goit-react-hw-test/static/css/main.eab82d60.css.map",
-    "main.7225d301.js.map": "/goit-react-hw-test/static/js/main.7225d301.js.map"
+    "main.367fbbf3.css.map": "/goit-react-hw-test/static/css/main.367fbbf3.css.map",
+    "main.fd6148c9.js.map": "/goit-react-hw-test/static/js/main.fd6148c9.js.map",
+    "983.105e5963.chunk.js.map": "/goit-react-hw-test/static/js/983.105e5963.chunk.js.map",
+    "501.99b31d12.chunk.js.map": "/goit-react-hw-test/static/js/501.99b31d12.chunk.js.map",
+    "58.293013f6.chunk.js.map": "/goit-react-hw-test/static/js/58.293013f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eab82d60.css",
-    "static/js/main.7225d301.js"
+    "static/css/main.367fbbf3.css",
+    "static/js/main.fd6148c9.js"
   ]
 }
