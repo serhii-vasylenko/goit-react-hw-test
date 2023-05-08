@@ -1,4 +1,4 @@
-@import 'react-dropdown/style.css';
+@import "react-dropdown/style.css";
 
 body {
   margin: 0;
@@ -55,9 +55,41 @@ button.following {
 
 a {
   text-decoration: none;
-  /* color: inherit; */
+  color: inherit;
+}
+
+a.active {
+  color: #fff;
 }
 
 .hidden {
   display: none;
+}
+
+button.top-button {
+  background-color: #5cd3a8;
+  opacity: 0.75;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & svg {
+    fill: #000;
+    opacity: 0.75;
+  }
+}
+
+.dropdown {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
+}
+
+.Dropdown-control {
+  border-radius: 8px;
 }

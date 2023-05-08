@@ -22,8 +22,12 @@ const usersSlice = createSlice({
   extraReducers: builder => {
     builder.addCase(fetchUsers.pending, handlePending);
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
-      console.log(state.items.length)
-      state.items =  [...state.items, ...action.payload];
+      state.items = [
+        ...state.items,
+        ...action.payload.filter(
+          newItem => !state.items.find(item => item.id === newItem.id)
+        ),
+      ];
       resetState(state);
     });
     builder.addCase(fetchUsers.rejected, handleRejected);

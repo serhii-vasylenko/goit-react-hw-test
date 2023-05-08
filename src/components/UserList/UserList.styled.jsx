@@ -1,16 +1,24 @@
 import styled from '@emotion/styled';
 
 export const List = styled.ul`
-  width: 1280px;
+
+@media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  }
+  
 `;
 
 export const Item = styled.li`
+margin-bottom: 24px;
+
+@media screen and (min-width: 768px) {
+
+}
   flex-basis: 380px;
   height: 460px;
 

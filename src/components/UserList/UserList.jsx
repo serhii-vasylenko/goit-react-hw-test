@@ -1,25 +1,27 @@
 import { UserListItem } from 'components/UserListItem/UserListItem';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from 'redux/operations';
 import { selectPage, selectUsers } from 'redux/selectors';
 import { Button, Item, List } from './UserList.styled';
-import { useLocation } from 'react-router';
-import { Link } from 'react-router-dom';
-import { HiArrowLeft } from 'react-icons/hi';
-import { clearState, nextPage } from 'redux/usersSlice';
+import { nextPage } from 'redux/usersSlice';
+
+import ScrollToTop from 'react-scroll-to-top';
 
 import Dropdown from 'react-dropdown';
 import { onSelect } from 'services/onSelect';
+import { BackLink } from 'components/BackLink/BackLink';
 
 export const UserLIst = () => {
   const page = useSelector(selectPage);
   const users = useSelector(selectUsers);
 
-  const location = useLocation();
-  const backLocation = useRef(location.state?.from ?? '/');
-
-  const options = ['all', 'follow', 'followings'];
+  // const options = ['all', 'follow', 'followings'];
+  const options = [
+    { value: 'all', label: 'All' },
+    { value: 'follow', label: 'Follow' },
+    { value: 'followings', label: 'Followings' },
+  ]
   const defaultOption = options[0];
 
   const dispatch = useDispatch();
@@ -30,26 +32,16 @@ export const UserLIst = () => {
 
   const handleLoadMoreClick = () => dispatch(nextPage());
 
-  useEffect(() => {
-    return () => {
-      dispatch(clearState());
-    };
-    // eslint-disable-next-line
-  }, []);
-
   return (
     <>
-      <Link to={backLocation.current} state={{ from: location }}>
-        <HiArrowLeft size="24" />
-        Back
-      </Link>
+      <BackLink />
       <Dropdown
         options={options}
         onChange={onSelect}
         value={defaultOption}
         placeholder="Select an option"
+        className='dropdown'
       />
-      ;
       <List>
         {users.map(user => {
           return (
@@ -60,6 +52,7 @@ export const UserLIst = () => {
         })}
       </List>
       {page < 4 && <Button onClick={handleLoadMoreClick}>Load more</Button>}
+      <ScrollToTop smooth color="#6f00ff" className={'top-button'} />
     </>
   );
 };
