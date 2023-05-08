@@ -12,7 +12,6 @@ export const UserListItem = ({ userItem }) => {
 
   const onFollow = (evt) => {
     setIsFollow(!isFollow);
-    console.log(evt.target);
     evt.target.classList.toggle('following')
     isFollow ? dispatch(removeFollow({id, followers})) : dispatch(addFollow({id, followers}));
   };
