@@ -43,6 +43,11 @@ img {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+
+  text-transform: uppercase;
 }
 
 button {
@@ -90,7 +95,11 @@ button.top-button {
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    width: 30%;
+    width: 362px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 380px;
   }
 }
 

@@ -1,26 +1,35 @@
 import styled from '@emotion/styled';
 
 export const List = styled.ul`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 
-@media screen and (min-width: 768px) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+    gap: 12px;
   }
-  
+
+  @media screen and (min-width: 1280px) {
+    gap: 50px;
+  }
 `;
 
 export const Item = styled.li`
-margin-bottom: 12px;
-
-@media screen and (min-width: 768px) {
-
-}
-  flex-basis: 380px;
   height: 460px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 12px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: 380px;
+  }
 
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;

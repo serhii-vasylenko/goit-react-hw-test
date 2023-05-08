@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
-import './App.css';
 import { Route, Routes } from 'react-router';
-import Layout from './Layout/Layout';
+import Layout from 'components/Layout/Layout';
 import { lazy } from 'react';
 
 const Home = lazy(() => import('pages/HomePage'));

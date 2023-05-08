@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from 'redux/operations';
 import { selectPage, selectUsers } from 'redux/selectors';
-import { Button, Item, List } from './UserList.styled';
+import { Button, Item, List } from 'components/UserList//UserList.styled';
 import { nextPage } from 'redux/usersSlice';
 
 import ScrollToTop from 'react-scroll-to-top';
@@ -15,10 +15,9 @@ import { BackLink } from 'components/BackLink/BackLink';
 export const UserLIst = () => {
   const page = useSelector(selectPage);
   const users = useSelector(selectUsers);
-
-  // const options = ['all', 'follow', 'followings'];
+  
   const options = [
-    { value: 'all', label: 'All' },
+    { value: 'all', label: 'Show All' },
     { value: 'follow', label: 'Follow' },
     { value: 'followings', label: 'Followings' },
   ]
