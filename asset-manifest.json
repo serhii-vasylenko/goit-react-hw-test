@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-test/static/css/main.9f52797c.css",
-    "main.js": "/goit-react-hw-test/static/js/main.c1d7414d.js",
-    "static/js/983.adb418a1.chunk.js": "/goit-react-hw-test/static/js/983.adb418a1.chunk.js",
-    "static/js/501.8baa84a3.chunk.js": "/goit-react-hw-test/static/js/501.8baa84a3.chunk.js",
+    "main.css": "/goit-react-hw-test/static/css/main.3058191f.css",
+    "main.js": "/goit-react-hw-test/static/js/main.608f8586.js",
+    "static/js/983.dcd20b4c.chunk.js": "/goit-react-hw-test/static/js/983.dcd20b4c.chunk.js",
+    "static/js/501.c01492da.chunk.js": "/goit-react-hw-test/static/js/501.c01492da.chunk.js",
     "static/js/809.1b815674.chunk.js": "/goit-react-hw-test/static/js/809.1b815674.chunk.js",
     "static/media/card-bg.png": "/goit-react-hw-test/static/media/card-bg.66ef788f31ecdfe25f4e.png",
     "index.html": "/goit-react-hw-test/index.html",
-    "main.9f52797c.css.map": "/goit-react-hw-test/static/css/main.9f52797c.css.map",
-    "main.c1d7414d.js.map": "/goit-react-hw-test/static/js/main.c1d7414d.js.map",
-    "983.adb418a1.chunk.js.map": "/goit-react-hw-test/static/js/983.adb418a1.chunk.js.map",
-    "501.8baa84a3.chunk.js.map": "/goit-react-hw-test/static/js/501.8baa84a3.chunk.js.map",
+    "main.3058191f.css.map": "/goit-react-hw-test/static/css/main.3058191f.css.map",
+    "main.608f8586.js.map": "/goit-react-hw-test/static/js/main.608f8586.js.map",
+    "983.dcd20b4c.chunk.js.map": "/goit-react-hw-test/static/js/983.dcd20b4c.chunk.js.map",
+    "501.c01492da.chunk.js.map": "/goit-react-hw-test/static/js/501.c01492da.chunk.js.map",
     "809.1b815674.chunk.js.map": "/goit-react-hw-test/static/js/809.1b815674.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f52797c.css",
-    "static/js/main.c1d7414d.js"
+    "static/css/main.3058191f.css",
+    "static/js/main.608f8586.js"
   ]
 }
