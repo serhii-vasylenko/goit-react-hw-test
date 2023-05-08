@@ -2,13 +2,13 @@
 An application for tracking tweets
 
 ### Built With
-- [React](https://reactjs.org/e) - The web framework used
-- [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
-- [Redux Toolkit](https://redux-toolkit.js.org/) - Toolset for efficient Redux development
+- [React](https://reactjs.org/e)
+- [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Router](https://reactrouter.com/)
-- [Axios](https://axios-http.com/) - Axios is a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data
-- [MockAPI](https://mockapi.io/) - simple tool that lets you easily mock up APIs, generate custom data, and preform operations on it using RESTful interface.
-- [Styled Components - Emotion](https://emotion.sh/docs/styled) - styled is a way to create React components that have styles attached to them
+- [Axios](https://axios-http.com/)
+- [MockAPI](https://mockapi.io/)
+- [Styled Components - Emotion](https://emotion.sh/docs/styled)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [react-dropdown](https://www.npmjs.com/package/react-dropdown)
 - [react-scroll-to-top](https://www.npmjs.com/package/react-scroll-to-top)
