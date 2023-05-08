@@ -14,7 +14,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-margin-bottom: 24px;
+margin-bottom: 12px;
 
 @media screen and (min-width: 768px) {
 

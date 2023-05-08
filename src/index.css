@@ -66,6 +66,10 @@ a.active {
   display: none;
 }
 
+.home-tweets {
+  color: #5cd3a8;
+}
+
 button.top-button {
   background-color: #5cd3a8;
   opacity: 0.75;

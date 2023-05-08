@@ -5,7 +5,7 @@ const HomePage = () => {
     <>
       <h2>
         Press to see all
-        <Link to="/tweets"> TWEETS</Link>
+        <Link to="/tweets" className='home-tweets'> TWEETS</Link>
       </h2>
     </>
   );
