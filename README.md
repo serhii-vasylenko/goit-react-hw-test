@@ -1,5 +1,5 @@
 ### Description
-An application for tracking tweets
+An application for tracking tweets with mobile, tablet and desktop verions. 
 
 ### Built With
 - [React](https://reactjs.org/e)

@@ -32,7 +32,7 @@ export const Card = styled.div`
     position: absolute;
     left: 0px;
     top: 214px;
-    
+
     display: block;
     height: 8px;
     width: 100%;
@@ -113,4 +113,8 @@ export const Button = styled.button`
   line-height: 1.22;
 
   text-transform: uppercase;
+
+  &:hover {
+    background: #fff;
+  }
 `;

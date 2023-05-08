@@ -24,4 +24,8 @@ export const Linkk = styled(Link)`
   line-height: 22px;
 
   text-transform: uppercase;
+
+  &:hover {
+    background: #3d9273;
+  }
 `

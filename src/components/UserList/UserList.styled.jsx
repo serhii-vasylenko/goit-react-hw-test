@@ -59,4 +59,8 @@ export const Button = styled.button`
   line-height: 22px;
 
   text-transform: uppercase;
+
+  &:hover {
+    background: #3d9273;
+  }
 `;

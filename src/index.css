@@ -56,6 +56,10 @@ button {
 
 button.following {
   background-color: #5cd3a8;
+
+  &:hover {
+    background-color: #3d9273;
+  }
 }
 
 a {
@@ -73,6 +77,10 @@ a.active {
 
 .home-tweets {
   color: #5cd3a8;
+
+  &:hover {
+    color: #3d9273;
+  }
 }
 
 button.top-button {
