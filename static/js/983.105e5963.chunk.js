@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_test=self.webpackChunkgoit_react_hw_test||[]).push([[983],{3983:function(e,t,s){s.r(t);var r=s(1087),n=s(184);t.default=function(){return(0,n.jsx)(n.Fragment,{children:(0,n.jsxs)("h2",{children:["Press to see all",(0,n.jsxs)(r.rU,{to:"/tweets",children:[" ","TWEETS"]})]})})}}}]);
-//# sourceMappingURL=983.105e5963.chunk.js.map
